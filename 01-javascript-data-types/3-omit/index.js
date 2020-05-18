@@ -9,7 +9,7 @@ export const omit = (obj, ...fields) => {
   const keys = Object.keys(obj);
 
   keys.forEach(key => {
-    if([...fields].indexOf(key) === -1)
+    if(fields.indexOf(key) === -1)
       result[key] = obj[key];
   });
 
