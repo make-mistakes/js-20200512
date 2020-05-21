@@ -7,7 +7,6 @@
 
 ```javascript
 function createGetter(field) {
-  /* ... */
 }
 
 const product = {
