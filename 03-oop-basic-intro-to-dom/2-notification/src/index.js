@@ -1,5 +1,4 @@
-let notification;
-notification && notification.destroy();
+
 
 export default class NotificationMessage {
   constructor(message, options) {
