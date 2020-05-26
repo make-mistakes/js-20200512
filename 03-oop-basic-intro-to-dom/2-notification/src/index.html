@@ -10,11 +10,8 @@
 <script type="module">
   import NotificationMessage from './index.js';
 
-  let notification;
   btn1.addEventListener('click', () => {
-    notification && notification.destroy();
-
-    notification = new NotificationMessage('Hello World', {
+    const notification = new NotificationMessage('Hello World', {
       duration: 2000,
       type: Math.random() >= 0.5 ? 'success' : 'error',
     });
